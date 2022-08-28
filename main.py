@@ -32,6 +32,8 @@ template_id = os.environ["TEMPLATE_ID"]
 user_id_list = [
     {'user_id': 'oWhSO54PqQpejvrLGFEu7EoZKvP0', "name": '🙄', "date": "2021-03-01", "birthday": "03-26",
      'city': '363200'},
+    {'user_id': 'oWhSO58bkSAJqP9sGv8xugaZhLu0', "name": '崽', "date": "2022-08-26", "birthday": "03-28",
+     'city': '341800'}
     
 ]
 
