@@ -10,16 +10,16 @@ from wechatpy.client.api import WeChatMessage
 today = datetime.now()
 
 # 微信公众号 app_id
-app_id = wxdb981250062f6ac3
+app_id = 'wxdb981250062f6ac3'
 
 # 微信公众号 app_secret
-app_secret = 8ea3d6c044c8ae12329d45586cb24df3
+app_secret = '8ea3d6c044c8ae12329d45586cb24df3'
 
 # 彩虹屁接口密钥 key
-key = 56928dd7fcf676b5c2a3c74f68fa8b8c
+key = '56928dd7fcf676b5c2a3c74f68fa8b8c'
 
 # 微信公众号 模板id
-template_id = AtgaD2O5oW7FAnJZxt09IsN6az99Mx51u3G5gDcuqmQ
+template_id = 'eeeHbmVarT7FV3CLyopukz-ZMGYlKTqHHuVjf-3xHY0'
 
 # 用户列表 也可通过接口获取，但是接口获取的只有用户id没有用户昵称，不方便部分数据展示，如果有新增人员，对应添加一个user对象即可
 '''
@@ -30,10 +30,8 @@ template_id = AtgaD2O5oW7FAnJZxt09IsN6az99Mx51u3G5gDcuqmQ
        city: 城市编码，api接口文档处查询
 '''
 user_id_list = [
-    {'user_id': 'oWhSO54PqQpejvrLGFEu7EoZKvP0', "name": '🙄', "date": "2021-03-01", "birthday": "03-26",
-     'city': '363200'},
     {'user_id': 'oWhSO58bkSAJqP9sGv8xugaZhLu0', "name": '崽', "date": "2022-08-26", "birthday": "03-28",
-     'city': '341800'}
+     'city': '360729'}
     
 ]
 
@@ -56,11 +54,11 @@ def get_random_color():
 # 天气信息
 def get_weather(city):
     url = "https://restapi.amap.com/v3/weather/weatherInfo?output=JSON&key=" + key + "&city=" + city
+    print(url)
     res = requests.get(url).json()
     print(res)
     weather = res["lives"][0]
-    return weather['weather'], weather['temperature'], weather['winddirection'], weather['province'] + weather[
-        'city']
+    return weather['weather'], weather['temperature'], weather['winddirection'], weather['province'] + weather['city']
 
 
 # 总天数
