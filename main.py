@@ -10,16 +10,16 @@ from wechatpy.client.api import WeChatMessage
 today = datetime.now()
 
 # 微信公众号 app_id
-app_id = os.environ["APP_ID"]
+app_id = wxdb981250062f6ac3
 
 # 微信公众号 app_secret
-app_secret = os.environ["APP_SECRET"]
+app_secret = 8ea3d6c044c8ae12329d45586cb24df3
 
 # 彩虹屁接口密钥 key
-key = os.environ["KEY"]
+key = 56928dd7fcf676b5c2a3c74f68fa8b8c
 
 # 微信公众号 模板id
-template_id = os.environ["TEMPLATE_ID"]
+template_id = AtgaD2O5oW7FAnJZxt09IsN6az99Mx51u3G5gDcuqmQ
 
 # 用户列表 也可通过接口获取，但是接口获取的只有用户id没有用户昵称，不方便部分数据展示，如果有新增人员，对应添加一个user对象即可
 '''
